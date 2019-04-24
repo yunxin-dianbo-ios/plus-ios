@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>serverAddress</key>
+	<dict>
+		<key>develop</key>
+		<dict>
+			<key>address</key>
+			<string>http://test-plus.zhibocloud.cn/</string>
+			<key>imAppKey</key>
+			<string>1139171207178196#test-plus</string>
+			<key>imApnsName</key>
+			<string>TsIMHYTestDev</string>
+		</dict>
+		<key>production</key>
+		<dict>
+			<key>address</key>
+			<string>https://tsplus.zhibocloud.cn/</string>
+			<key>imAppKey</key>
+			<string>1139171207178196#thinksns-plus</string>
+			<key>imApnsName</key>
+			<string>TsIMHYTestDis</string>
+		</dict>
+	</dict>
+	<key>BuglyAppID</key>
+	<string>c46381af1a</string>
+	<key>BuglyAppKey</key>
+	<string>05885b6b-0e4e-4503-a5a2-e616d56e0891</string>
+	<key>AMapApiKey</key>
+	<string>d599bf109c255bab36216d5393e93a36</string>
+	<key>isHiddenGuestLoginButtonInLaunch</key>
+	<false/>
+	<key>jPushKey</key>
+	<string>f0f9b22e116b6d60a278073f</string>
+</dict>
+</plist>

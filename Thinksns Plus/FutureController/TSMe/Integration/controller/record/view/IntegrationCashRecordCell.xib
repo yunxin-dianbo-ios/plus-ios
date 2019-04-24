@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="KGk-i7-Jjw" customClass="IntegrationCashRecordCell" customModule="ThinkSNSPlus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="52.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0goldName" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYS-XE-DP1">
+                        <rect key="frame" x="228" y="16" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="LyE-Sd-qU8"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="lkW-Ws-euH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="1" green="0.58622533082962036" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iS-js-gZT">
+                        <rect key="frame" x="12" y="17.5" width="42" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.19997966289999999" green="0.20001339909999999" blue="0.19996902350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="充值结果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fp7-DC-6kY">
+                        <rect key="frame" x="100" y="17" width="112" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.19997966289520264" green="0.20001339912414551" blue="0.19996902346611023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="fp7-DC-6kY" secondAttribute="trailing" constant="108" id="7nn-3o-Ugh"/>
+                    <constraint firstItem="fp7-DC-6kY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8qi-z6-7fF"/>
+                    <constraint firstItem="0iS-js-gZT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Gsv-fO-fSU"/>
+                    <constraint firstAttribute="trailing" secondItem="PYS-XE-DP1" secondAttribute="trailing" constant="12" id="OIs-aY-r8K"/>
+                    <constraint firstItem="fp7-DC-6kY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="100" id="a8y-Ad-en2"/>
+                    <constraint firstItem="0iS-js-gZT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="aOF-6E-DLo"/>
+                    <constraint firstItem="PYS-XE-DP1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="k1z-ru-Lab"/>
+                    <constraint firstAttribute="bottom" secondItem="PYS-XE-DP1" secondAttribute="bottom" constant="16.5" id="lah-da-80x"/>
+                    <constraint firstItem="PYS-XE-DP1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="xPr-ko-XT8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountLabel" destination="PYS-XE-DP1" id="jM1-pu-lQU"/>
+                <outlet property="messageLabel" destination="fp7-DC-6kY" id="wbt-Gt-lop"/>
+                <outlet property="timeLabel" destination="0iS-js-gZT" id="Yx4-BC-srM"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="135.5"/>
+        </tableViewCell>
+    </objects>
+</document>

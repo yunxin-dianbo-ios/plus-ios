@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TSMessagePopCell" id="UyR-ha-7fA" customClass="TSMessagePopCell" customModule="ThinkSNSPlus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UyR-ha-7fA" id="Ndt-Ua-B7A">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSh-xr-vR9" customClass="TSLabel" customModule="ThinkSNSPlus" customModuleProvider="target">
+                        <rect key="frame" x="63" y="11" width="231" height="45"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jTm-E7-q0Q" customClass="AvatarView" customModule="ThinkSNSPlus" customModuleProvider="target">
+                        <rect key="frame" x="10" y="15" width="38" height="38"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="8Wj-xO-KXC"/>
+                            <constraint firstAttribute="width" constant="38" id="fQa-bg-Lr7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="bSh-xr-vR9" secondAttribute="trailing" constant="10" id="CLk-F5-1zs"/>
+                    <constraint firstItem="bSh-xr-vR9" firstAttribute="top" secondItem="Ndt-Ua-B7A" secondAttribute="topMargin" id="IQr-bm-hhc"/>
+                    <constraint firstItem="jTm-E7-q0Q" firstAttribute="leading" secondItem="Ndt-Ua-B7A" secondAttribute="leading" constant="10" id="ccB-7m-ATy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="bSh-xr-vR9" secondAttribute="bottom" id="kYM-GY-JWm"/>
+                    <constraint firstItem="jTm-E7-q0Q" firstAttribute="top" secondItem="Ndt-Ua-B7A" secondAttribute="top" constant="15" id="ndr-6c-cYW"/>
+                    <constraint firstItem="bSh-xr-vR9" firstAttribute="leading" secondItem="jTm-E7-q0Q" secondAttribute="trailing" constant="15" id="yJC-w7-yDT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headerButton" destination="jTm-E7-q0Q" id="zKJ-7l-SSY"/>
+                <outlet property="nameLabel" destination="bSh-xr-vR9" id="j0Y-MO-oRM"/>
+            </connections>
+            <point key="canvasLocation" x="-1132" y="7.5"/>
+        </tableViewCell>
+    </objects>
+</document>

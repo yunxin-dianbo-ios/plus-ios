@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TSAdvertNormalItem" customModule="ThinkSNSPlus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lwn-do-Gyj" customClass="TSAdvertItemView" customModule="ThinkSNSPlus" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="100"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Lwn-do-Gyj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GgX-fM-cMR"/>
+                <constraint firstAttribute="trailing" secondItem="Lwn-do-Gyj" secondAttribute="trailing" id="KBm-UV-0yV"/>
+                <constraint firstItem="Lwn-do-Gyj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cAG-Ls-Nqb"/>
+                <constraint firstAttribute="bottom" secondItem="Lwn-do-Gyj" secondAttribute="bottom" id="udg-s3-V6X"/>
+            </constraints>
+            <size key="customSize" width="170" height="100"/>
+            <connections>
+                <outlet property="advertView" destination="Lwn-do-Gyj" id="OPi-e4-oW8"/>
+            </connections>
+            <point key="canvasLocation" x="-48" y="54"/>
+        </collectionViewCell>
+    </objects>
+</document>

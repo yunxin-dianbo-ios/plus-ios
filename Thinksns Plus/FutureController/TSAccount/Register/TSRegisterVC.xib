@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TSRegisterVC" customModule="ThinkSNSPlus" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonForRegister" destination="DbT-cU-Smj" id="FRz-Hg-Zte"/>
+                <outlet property="buttonForSendCAPTCHA" destination="BC7-od-BWY" id="GUk-s9-OUm"/>
+                <outlet property="indicatorForRegister" destination="RgT-vh-C29" id="VwE-0r-Mbi"/>
+                <outlet property="indicatorForSecureTextEnty" destination="zGr-TD-NV6" id="Xvn-GL-mUp"/>
+                <outlet property="labelForAccount" destination="AK0-OL-kCh" id="Aex-86-VwI"/>
+                <outlet property="labelForCutDown" destination="wsC-Tf-SNZ" id="QnA-JJ-OSf"/>
+                <outlet property="labelForPrompt" destination="utT-8L-Jsv" id="GaD-4G-ig0"/>
+                <outlet property="showTermsBtn" destination="CeW-lw-mMW" id="YUk-SQ-BfL"/>
+                <outlet property="textFieldForAccount" destination="0vn-jN-RWq" id="nbr-gz-fzc"/>
+                <outlet property="textFieldForCAPTCHA" destination="epr-HO-7Tm" id="xeM-DE-pf4"/>
+                <outlet property="textFieldForPassword" destination="vz1-nO-62l" id="Nph-OC-2Y3"/>
+                <outlet property="textFieldForUserName" destination="5FS-cC-sKh" id="zFo-eP-qBl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utT-8L-Jsv" customClass="TSAccountMessagelabel" customModule="ThinkSNSPlus" customModuleProvider="target">
+                    <rect key="frame" x="16" y="234" width="344" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14.5" id="TtT-qp-CTE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.94117647058823528" green="0.23529411764705882" blue="0.23921568627450981" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbT-cU-Smj" customClass="TSColorLumpButton" customModule="ThinkSNSPlus" customModuleProvider="target">
+                    <rect key="frame" x="15" y="269" width="345" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="kGi-fx-Q6c"/>
+                    </constraints>
+                    <state key="normal" title="注册"/>
+                    <connections>
+                        <action selector="registerButtonTaped" destination="-1" eventType="touchUpInside" id="NDj-d5-PPT"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mth-Qi-Nrj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPi-TE-fsK" customClass="TSAccountLabel" customModule="ThinkSNSPlus" customModuleProvider="target">
+                            <rect key="frame" x="15" y="18" width="46" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名不能低于2个中文或4个英文" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5FS-cC-sKh" customClass="TSAccountTextField" customModule="ThinkSNSPlus" customModuleProvider="target">
+                            <rect key="frame" x="76" y="7" width="284" height="40"/>
+                            <color key="tintColor" red="0.27450980392156865" green="0.65490196078431373" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="trI-4H-r5m"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                    <integer key="value" value="300"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="dPi-TE-fsK" firstAttribute="centerY" secondItem="mth-Qi-Nrj" secondAttribute="centerY" id="0zy-3y-za9"/>
+                        <constraint firstItem="5FS-cC-sKh" firstAttribute="leading" secondItem="dPi-TE-fsK" secondAttribute="trailing" constant="15" id="7iS-yQ-Rmm"/>
+                        <constraint firstAttribute="height" constant="54" id="WRQ-bv-1ZY"/>
+                        <constraint firstItem="5FS-cC-sKh" firstAttribute="centerY" secondItem="mth-Qi-Nrj" secondAttribute="centerY" id="a15-JO-CrE"/>
+                        <constraint firstItem="dPi-TE-fsK" firstAttribute="leading" secondItem="mth-Qi-Nrj" secondAttribute="leading" constant="15" id="pJ9-wi-fsU"/>
+                        <constraint firstAttribute="trailing" secondItem="5FS-cC-sKh" secondAttribute="trailing" constant="15" id="yQJ-6g-vVg"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rbo-Ej-yRC">
+                    <rect key="frame" x="0.0" y="55" width="375" height="54"/>
+                    <subviews>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zGr-TD-NV6" customClass="TSIndicatorFlowerView" customModule="ThinkSNSPlus" customModuleProvider="target">
+                            <rect key="frame" x="337" y="11.5" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="7ZA-wk-qvl"/>
+                                <constraint firstAttribute="height" constant="30" id="A8T-Lq-vYy"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AK0-OL-kCh" customClass="TSAccountLabel" customModule="ThinkSNSPlus" customModuleProvider="target">
+                            <rect key="frame" x="15" y="18" width="46" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="k6F-mr-G1Z"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入11位手机号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0vn-jN-RWq" customClass="TSAccountTextField" customModule="ThinkSNSPlus" customModuleProvider="target">
+                            <rect key="frame" x="76" y="7" width="210" height="40"/>
+                            <color key="tintColor" red="0.27450980392156865" green="0.65490196078431373" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="8to-rw-DpT"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                    <integer key="value" value="301"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BC7-od-BWY" customClass="TSSendCAPTCHAButton" customModule="ThinkSNSPlus" customModuleProvider="target">
+                            <rect key="frame" x="290" y="2" width="77" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="5ti-BS-diW"/>
+                            </constraints>
+                            <state key="normal" title="获取验证码">
+                                <color key="titleColor" red="0.27450980392156865" green="0.65490196078431373" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sendCAPTCHAButtonTaped" destination="-1" eventType="touchUpInside" id="Dd1-mb-UVX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="BC7-od-BWY" firstAttribute="leading" secondItem="0vn-jN-RWq" secondAttribute="trailing" constant="4" id="CJe-ZV-KX3"/>
+                        <constraint firstAttribute="height" constant="54" id="bah-lX-6Q8"/>
+                        <constraint firstItem="0vn-jN-RWq" firstAttribute="centerY" secondItem="Rbo-Ej-yRC" secondAttribute="centerY" id="gJ6-rl-YCM"/>
+                        <constraint firstAttribute="trailing" secondItem="0vn-jN-RWq" secondAttribute="trailing" constant="89" id="iOB-CB-FkE"/>
+                        <constraint firstItem="BC7-od-BWY" firstAttribute="centerY" secondItem="Rbo-Ej-yRC" secondAttribute="centerY" id="mel-XQ-ax1"/>
+                        <constraint firstItem="0vn-jN-RWq" firstAttribute="leading" secondItem="AK0-OL-kCh" secondAttribute="trailing" constant="15" id="n7D-2v-5wB"/>
+                        <constraint firstItem="AK0-OL-kCh" firstAttribute="leading" secondItem="Rbo-Ej-yRC" secondAttribute="leading" constant="15" id="oim-Ya-eHY"/>
+                        <constraint firstAttribute="trailing" secondItem="BC7-od-BWY" secondAttribute="trailing" constant="8" id="udb-Pe-ccP"/>
+                        <constraint firstItem="AK0-OL-kCh" firstAttribute="centerY" secondItem="Rbo-Ej-yRC" secondAttribute="centerY" id="um7-vD-Bxs"/>
+                        <constraint firstItem="zGr-TD-NV6" firstAttribute="centerY" secondItem="Rbo-Ej-yRC" secondAttribute="centerY" id="vLi-03-LYg"/>
+                    </constraints>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="59后重发" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsC-Tf-SNZ" customClass="TSCutDownLabel" customModule="ThinkSNSPlus" customModuleProvider="target">
+                    <rect key="frame" x="290" y="57" width="77" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.27450980392156865" green="0.65490196078431373" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUC-Gi-k88">
+                    <rect key="frame" x="0.0" y="110" width="375" height="54"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="验证码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEC-XT-gjB" customClass="TSAccountLabel" customModule="ThinkSNSPlus" customModuleProvider="target">
+                            <rect key="frame" x="15" y="18" width="46" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入4-6位验证码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="epr-HO-7Tm" customClass="TSAccountTextField" customModule="ThinkSNSPlus" customModuleProvider="target">
+                            <rect key="frame" x="76" y="7" width="284" height="40"/>
+                            <color key="tintColor" red="0.27450980392156865" green="0.65490196078431373" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="uFQ-tM-Uew"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="LEC-XT-gjB" firstAttribute="centerY" secondItem="iUC-Gi-k88" secondAttribute="centerY" id="5Ws-Ij-ZdE"/>
+                        <constraint firstAttribute="trailing" secondItem="epr-HO-7Tm" secondAttribute="trailing" constant="15" id="BON-BM-kLd"/>
+                        <constraint firstAttribute="height" constant="54" id="Elw-4t-3oq"/>
+                        <constraint firstItem="epr-HO-7Tm" firstAttribute="leading" secondItem="LEC-XT-gjB" secondAttribute="trailing" constant="15" id="mGm-iV-zE0"/>
+                        <constraint firstItem="LEC-XT-gjB" firstAttribute="leading" secondItem="iUC-Gi-k88" secondAttribute="leading" constant="15" id="n2j-Va-Ggc"/>
+                        <constraint firstItem="epr-HO-7Tm" firstAttribute="centerY" secondItem="iUC-Gi-k88" secondAttribute="centerY" id="y1c-gg-pOb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DaJ-55-SwC">
+                    <rect key="frame" x="0.0" y="165" width="375" height="54"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAZ-as-oj6" customClass="TSAccountLabel" customModule="ThinkSNSPlus" customModuleProvider="target">
+                            <rect key="frame" x="16" y="18" width="31" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgt-h4-52y">
+                            <rect key="frame" x="321" y="0.0" width="54" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="54" id="210-SD-nu3"/>
+                                <constraint firstAttribute="width" constant="54" id="gYX-qX-7mp"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="16"/>
+                            <state key="normal" title="密码模式" image="IMG_ico_closeeye"/>
+                            <connections>
+                                <action selector="secureTextEntryButtonTaped:" destination="-1" eventType="touchUpInside" id="9OU-k2-m3K"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入6位以上登录密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vz1-nO-62l" customClass="TSAccountTextField" customModule="ThinkSNSPlus" customModuleProvider="target">
+                            <rect key="frame" x="76" y="7" width="235" height="40"/>
+                            <color key="tintColor" red="0.27450980392156865" green="0.65490196078431373" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="TE6-W9-IQQ"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="651-xl-H7f"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="k6M-ve-WMH"/>
+                        <constraint firstItem="Wgt-h4-52y" firstAttribute="leading" secondItem="vz1-nO-62l" secondAttribute="trailing" constant="10" id="kvK-ei-yUp"/>
+                        <constraint firstItem="Wgt-h4-52y" firstAttribute="centerY" secondItem="DaJ-55-SwC" secondAttribute="centerY" id="tye-CJ-Y5z"/>
+                        <constraint firstItem="vz1-nO-62l" firstAttribute="centerY" secondItem="DaJ-55-SwC" secondAttribute="centerY" id="v6R-T3-EvZ"/>
+                    </constraints>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RgT-vh-C29" customClass="TSIndicatorFlowerView" customModule="ThinkSNSPlus" customModuleProvider="target">
+                    <rect key="frame" x="198" y="269" width="45" height="45"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeW-lw-mMW">
+                    <rect key="frame" x="95.5" y="633" width="184" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <state key="normal" title="点击下一步即代表同意《用户使用协议》">
+                        <color key="titleColor" red="0.73725490196078436" green="0.73725490196078436" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="showTermsBtnClick:" destination="-1" eventType="touchUpInside" id="TQh-UD-y7H"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94509803921568625" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="mth-Qi-Nrj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0n8-tW-lBZ"/>
+                <constraint firstItem="vz1-nO-62l" firstAttribute="leading" secondItem="epr-HO-7Tm" secondAttribute="leading" id="9UY-vI-tY4"/>
+                <constraint firstItem="iUC-Gi-k88" firstAttribute="top" secondItem="Rbo-Ej-yRC" secondAttribute="bottom" constant="1" id="J1y-yB-Bfh"/>
+                <constraint firstItem="CeW-lw-mMW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JbQ-0A-Rcb"/>
+                <constraint firstItem="RgT-vh-C29" firstAttribute="centerX" secondItem="DbT-cU-Smj" secondAttribute="centerX" multiplier="100:85" id="Jv0-4t-ltW"/>
+                <constraint firstItem="RgT-vh-C29" firstAttribute="height" secondItem="DbT-cU-Smj" secondAttribute="height" id="Lc0-Z3-Ab1"/>
+                <constraint firstItem="DbT-cU-Smj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="MzB-qw-rak"/>
+                <constraint firstItem="iUC-Gi-k88" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="P1o-hO-vnk"/>
+                <constraint firstItem="Rbo-Ej-yRC" firstAttribute="top" secondItem="mth-Qi-Nrj" secondAttribute="bottom" constant="1" id="POi-Gw-k1L"/>
+                <constraint firstAttribute="trailing" secondItem="DbT-cU-Smj" secondAttribute="trailing" constant="15" id="Skm-SS-vUG"/>
+                <constraint firstItem="wsC-Tf-SNZ" firstAttribute="height" secondItem="BC7-od-BWY" secondAttribute="height" id="TeK-nm-xX7"/>
+                <constraint firstItem="utT-8L-Jsv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="VkX-6H-VFU"/>
+                <constraint firstItem="RgT-vh-C29" firstAttribute="centerY" secondItem="DbT-cU-Smj" secondAttribute="centerY" id="W1j-FK-Ey5"/>
+                <constraint firstItem="Wgt-h4-52y" firstAttribute="trailing" secondItem="epr-HO-7Tm" secondAttribute="trailing" constant="15" id="W27-Rr-J0C"/>
+                <constraint firstItem="wsC-Tf-SNZ" firstAttribute="centerY" secondItem="BC7-od-BWY" secondAttribute="centerY" id="WwA-Sh-CrY"/>
+                <constraint firstItem="wsC-Tf-SNZ" firstAttribute="trailing" secondItem="zGr-TD-NV6" secondAttribute="trailing" id="fbz-0l-fKb"/>
+                <constraint firstItem="DaJ-55-SwC" firstAttribute="top" secondItem="iUC-Gi-k88" secondAttribute="bottom" constant="1" id="gbu-7R-jnZ"/>
+                <constraint firstItem="6XE-0z-BRP" firstAttribute="bottom" secondItem="CeW-lw-mMW" secondAttribute="bottom" constant="10" id="hjd-CH-qdv"/>
+                <constraint firstItem="DbT-cU-Smj" firstAttribute="top" secondItem="DaJ-55-SwC" secondAttribute="bottom" constant="50" id="iHR-qa-N0V"/>
+                <constraint firstItem="mth-Qi-Nrj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jk3-P5-wxv"/>
+                <constraint firstItem="wsC-Tf-SNZ" firstAttribute="centerX" secondItem="BC7-od-BWY" secondAttribute="centerX" id="noV-y5-Ov5"/>
+                <constraint firstItem="Rbo-Ej-yRC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ntd-4G-Ese"/>
+                <constraint firstAttribute="trailing" secondItem="DaJ-55-SwC" secondAttribute="trailing" id="pEA-70-Hb5"/>
+                <constraint firstAttribute="trailing" secondItem="utT-8L-Jsv" secondAttribute="trailing" constant="15" id="qYc-Yp-iMV"/>
+                <constraint firstItem="wsC-Tf-SNZ" firstAttribute="width" secondItem="BC7-od-BWY" secondAttribute="width" id="qgb-XN-rqP"/>
+                <constraint firstAttribute="trailing" secondItem="Rbo-Ej-yRC" secondAttribute="trailing" id="s15-i7-Jq7"/>
+                <constraint firstItem="DaJ-55-SwC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sON-AD-sVN"/>
+                <constraint firstAttribute="trailing" secondItem="mth-Qi-Nrj" secondAttribute="trailing" id="sfd-cl-39C"/>
+                <constraint firstItem="utT-8L-Jsv" firstAttribute="top" secondItem="DaJ-55-SwC" secondAttribute="bottom" constant="15" id="w5G-hX-w0p"/>
+                <constraint firstItem="RgT-vh-C29" firstAttribute="width" secondItem="RgT-vh-C29" secondAttribute="height" multiplier="1:1" id="xb9-F4-SeF"/>
+                <constraint firstAttribute="trailing" secondItem="iUC-Gi-k88" secondAttribute="trailing" id="zWj-kf-uGq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="6XE-0z-BRP"/>
+            <point key="canvasLocation" x="61.5" y="62.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IMG_ico_closeeye" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+//
+//  TSIndicatorPayMusicAlbum.swift
+//  ThinkSNS +
+//
+//  Created by 小唐 on 03/08/2017.
+//  Copyright © 2017 ZhiYiCX. All rights reserved.
+//
+//  音乐专辑付费弹窗
+
+import Foundation
+import UIKit
+
+class TSIndicatorPayMusicAlbum: TSIndicatorPayBasicView {
+    /// 显示付费弹窗
+    func show(album: TSAlbumListModel, success: (() -> Void)?, failure: (() -> Void)? = nil) -> Void {
+        guard let payNode = album.paidNode else {
+            return
+        }
+        // 1.设置按钮点击事件
+        setActionForBuyButton {
+            // 未登录处理
+            if !TSCurrentUserInfo.share.isLogin {
+                TSRootViewController.share.guestJoinLoginVC()
+                self.dissmiss()
+                return
+            }
+            let loadingAlert = TSIndicatorWindowTop(state: .loading, title: "交易中")
+            loadingAlert.show()
+            self.buttonForBuy.isEnabled = false
+            // 1.1 购买付费节点内容
+            TSPayNetworkManager.pay(node: payNode.node, complete: { (isSuccess: Bool, message: String?) in
+                loadingAlert.dismiss()
+                // 结果处理
+                if isSuccess {
+                    // 修改当前模型
+                    album.paidNode?.paid = true
+                    // 更新数据库
+                    TSDatabaseManager().music.updateAlbumList(wtih: album)
+                    // 显示结果
+                    let finalAlert = TSIndicatorWindowTop(state: .success, title: "购买成功")
+                    finalAlert.show(timeInterval: TSIndicatorWindowTop.defaultShowTimeInterval, complete: {
+                        // 成功回调
+                        self.dissmiss()
+                        success?()
+                        TSUtil.dismissPwdVC()
+                    })
+                } else {
+                    // 购买失败
+                    let resultAlert = TSIndicatorWindowTop(state: .faild, title: message)
+                    resultAlert.show(timeInterval: TSIndicatorWindowTop.defaultShowTimeInterval, complete: {
+                        failure?()
+                        self.dissmiss()
+                    })
+                }
+            })
+        }
+
+        // 2.设置显示内容
+        let titleString = "支付弹窗_标题".localized
+        let priceString = String(Int(price))
+        let descriptionContent = "支付弹窗_专辑收费描述".localized + "支付弹窗_描述开头".localized + priceString + TSAppConfig.share.localInfo.goldName + "支付弹窗_专辑付费收听描述".localized
+
+        labelForTitle.text = titleString
+        setPrice(content: priceString)
+        setDescription(content: descriptionContent, linkWord: nil)
+
+        // 更新子视图布局
+        updateChildViewLayout()
+
+        // 调用父类方法
+        super.show()
+    }
+}

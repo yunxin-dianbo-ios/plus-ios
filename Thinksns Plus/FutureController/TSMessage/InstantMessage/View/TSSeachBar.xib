@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="N35-J1-fwD" customClass="TSSeachBar" customModule="ThinkSNSPlus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="545" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBR-nk-isJ">
+                    <rect key="frame" x="15" y="10" width="515" height="27"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搜索" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOA-nq-Usx">
+                            <rect key="frame" x="245" y="7" width="25" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_search_icon_search" translatesAutoresizingMaskIntoConstraints="NO" id="FBX-1S-X5L">
+                            <rect key="frame" x="226.5" y="7.5" width="12" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="hpS-nJ-zsE"/>
+                                <constraint firstAttribute="height" constant="12" id="kQb-2K-XCJ"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODW-1n-9L5">
+                            <rect key="frame" x="0.0" y="0.0" width="515" height="27"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="ODW-1n-9L5" firstAttribute="top" secondItem="EBR-nk-isJ" secondAttribute="top" id="4g6-Dw-jlK"/>
+                        <constraint firstAttribute="trailing" secondItem="ODW-1n-9L5" secondAttribute="trailing" id="7Ha-A8-Pdq"/>
+                        <constraint firstItem="zOA-nq-Usx" firstAttribute="centerX" secondItem="EBR-nk-isJ" secondAttribute="centerX" id="BCm-aa-nl7"/>
+                        <constraint firstItem="zOA-nq-Usx" firstAttribute="centerY" secondItem="EBR-nk-isJ" secondAttribute="centerY" id="QQb-tB-9du"/>
+                        <constraint firstItem="ODW-1n-9L5" firstAttribute="leading" secondItem="EBR-nk-isJ" secondAttribute="leading" id="gBD-m2-9A4"/>
+                        <constraint firstItem="FBX-1S-X5L" firstAttribute="centerY" secondItem="EBR-nk-isJ" secondAttribute="centerY" id="rHj-cH-R4m"/>
+                        <constraint firstItem="FBX-1S-X5L" firstAttribute="centerX" secondItem="EBR-nk-isJ" secondAttribute="centerX" constant="-25" id="vc3-k0-vEn"/>
+                        <constraint firstAttribute="bottom" secondItem="ODW-1n-9L5" secondAttribute="bottom" id="zdg-1j-MDE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="EBR-nk-isJ" firstAttribute="leading" secondItem="dkX-Q3-fPk" secondAttribute="leading" constant="15" id="CHA-PK-5hO"/>
+                <constraint firstItem="dkX-Q3-fPk" firstAttribute="trailing" secondItem="EBR-nk-isJ" secondAttribute="trailing" constant="15" id="F64-sa-k7o"/>
+                <constraint firstItem="EBR-nk-isJ" firstAttribute="top" secondItem="dkX-Q3-fPk" secondAttribute="top" constant="10" id="gpW-OF-8BX"/>
+                <constraint firstItem="dkX-Q3-fPk" firstAttribute="bottom" secondItem="EBR-nk-isJ" secondAttribute="bottom" constant="10" id="wTN-wP-2D9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="dkX-Q3-fPk"/>
+            <connections>
+                <outlet property="bgView" destination="EBR-nk-isJ" id="RrK-Tv-hwO"/>
+                <outlet property="seachButton" destination="ODW-1n-9L5" id="Sdo-XP-F4Z"/>
+            </connections>
+            <point key="canvasLocation" x="233.5" y="-528.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IMG_search_icon_search" width="12" height="12"/>
+    </resources>
+</document>

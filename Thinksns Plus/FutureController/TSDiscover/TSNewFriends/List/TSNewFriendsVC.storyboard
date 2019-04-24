@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tCM-hJ-yIm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New FriendsVC-->
+        <scene sceneID="1tY-Q7-osp">
+            <objects>
+                <viewController id="tCM-hJ-yIm" customClass="TSNewFriendsVC" customModule="ThinkSNSPlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hdo-bH-eWG"/>
+                        <viewControllerLayoutGuide type="bottom" id="vKq-3x-c4x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j49-Jn-QLk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNZ-JZ-YkN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pb6-cl-rmg">
+                                        <rect key="frame" x="50" y="28" width="188" height="27"/>
+                                        <color key="backgroundColor" red="0.92149090769999997" green="0.92162007089999998" blue="0.92145007850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="moS-ZG-cvO"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="searchBarTaped" destination="tCM-hJ-yIm" eventType="touchUpInside" id="kgw-n0-AqQ"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTJ-jP-DoP">
+                                        <rect key="frame" x="0.0" y="63" width="375" height="1"/>
+                                        <color key="backgroundColor" red="0.87051463129999995" green="0.87063705920000001" blue="0.8704758883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="pao-7s-iWg"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_search_icon_search" translatesAutoresizingMaskIntoConstraints="NO" id="gRx-5F-uhz">
+                                        <rect key="frame" x="56" y="35.5" width="12" height="12"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搜索" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70Q-yP-bvc">
+                                        <rect key="frame" x="75.5" y="34" width="25" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.59994798900000001" green="0.60003459449999996" blue="0.59992057089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Otw-k9-6dz">
+                                        <rect key="frame" x="255" y="18.5" width="24" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="Daa-Jc-gBZ"/>
+                                        </constraints>
+                                        <state key="normal" image="IMG_find_ico_contacts"/>
+                                        <connections>
+                                            <action selector="contactsButtonTaped" destination="tCM-hJ-yIm" eventType="touchUpInside" id="6Mt-jO-8r9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kID-uo-1Ns">
+                                        <rect key="frame" x="279" y="18.5" width="96" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="L6v-Fb-R2Y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="选择城市" image="IMG_find_ico_location">
+                                            <color key="titleColor" red="0.19997966289999999" green="0.20001339909999999" blue="0.19996902350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cityButtonTaped" destination="tCM-hJ-yIm" eventType="touchUpInside" id="efe-jS-FEp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eal-eF-cAE">
+                                        <rect key="frame" x="15" y="26.5" width="24" height="24"/>
+                                        <state key="normal" image="IMG_topbar_back"/>
+                                        <connections>
+                                            <action selector="backButtonTaped" destination="tCM-hJ-yIm" eventType="touchUpInside" id="WaA-fh-EDU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="gRx-5F-uhz" firstAttribute="leading" secondItem="pb6-cl-rmg" secondAttribute="leading" constant="6" id="8en-4e-OWs"/>
+                                    <constraint firstItem="Otw-k9-6dz" firstAttribute="centerY" secondItem="pb6-cl-rmg" secondAttribute="centerY" id="AVS-vj-YAI"/>
+                                    <constraint firstAttribute="trailing" secondItem="pb6-cl-rmg" secondAttribute="trailing" constant="137" id="Bqd-kf-x1b"/>
+                                    <constraint firstItem="NTJ-jP-DoP" firstAttribute="top" secondItem="Eal-eF-cAE" secondAttribute="bottom" constant="12.5" id="DCr-Hm-aBm"/>
+                                    <constraint firstItem="pb6-cl-rmg" firstAttribute="leading" secondItem="qNZ-JZ-YkN" secondAttribute="leading" constant="50" id="DnE-oh-PU6"/>
+                                    <constraint firstItem="70Q-yP-bvc" firstAttribute="centerY" secondItem="pb6-cl-rmg" secondAttribute="centerY" id="O75-fe-BUl"/>
+                                    <constraint firstItem="Eal-eF-cAE" firstAttribute="leading" secondItem="qNZ-JZ-YkN" secondAttribute="leading" constant="15" id="RfM-fj-e56"/>
+                                    <constraint firstItem="NTJ-jP-DoP" firstAttribute="top" secondItem="pb6-cl-rmg" secondAttribute="bottom" constant="8" id="S2P-lS-oV1"/>
+                                    <constraint firstAttribute="trailing" secondItem="NTJ-jP-DoP" secondAttribute="trailing" id="Tic-IK-UdI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Otw-k9-6dz" secondAttribute="trailing" constant="96" id="VKs-ic-wNL"/>
+                                    <constraint firstAttribute="trailing" secondItem="kID-uo-1Ns" secondAttribute="trailing" id="cJl-ad-lRp"/>
+                                    <constraint firstItem="gRx-5F-uhz" firstAttribute="centerY" secondItem="pb6-cl-rmg" secondAttribute="centerY" id="hj3-MK-MP4"/>
+                                    <constraint firstItem="70Q-yP-bvc" firstAttribute="leading" secondItem="gRx-5F-uhz" secondAttribute="trailing" constant="7.5" id="iAG-kC-ns9"/>
+                                    <constraint firstItem="kID-uo-1Ns" firstAttribute="centerY" secondItem="pb6-cl-rmg" secondAttribute="centerY" id="kE2-5Z-JYs"/>
+                                    <constraint firstItem="NTJ-jP-DoP" firstAttribute="leading" secondItem="qNZ-JZ-YkN" secondAttribute="leading" id="kdH-ka-sPN"/>
+                                    <constraint firstItem="kID-uo-1Ns" firstAttribute="leading" secondItem="Otw-k9-6dz" secondAttribute="trailing" id="oSB-Ec-S78"/>
+                                    <constraint firstAttribute="height" constant="64" id="vQJ-RH-geP"/>
+                                    <constraint firstAttribute="bottom" secondItem="NTJ-jP-DoP" secondAttribute="bottom" id="wPa-Jd-qB3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2E-MJ-uff" customClass="TSTopLabelView" customModule="ThinkSNSPlus" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Rzn-QG-E4n"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PnU-HQ-9Gh">
+                                <rect key="frame" x="0.0" y="109" width="375" height="558"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PnU-HQ-9Gh" firstAttribute="top" secondItem="X2E-MJ-uff" secondAttribute="bottom" id="2HT-ft-tKc"/>
+                            <constraint firstAttribute="bottom" secondItem="PnU-HQ-9Gh" secondAttribute="bottom" id="CYn-yu-oV1"/>
+                            <constraint firstItem="PnU-HQ-9Gh" firstAttribute="leading" secondItem="j49-Jn-QLk" secondAttribute="leading" id="CZK-Yg-4em"/>
+                            <constraint firstItem="X2E-MJ-uff" firstAttribute="leading" secondItem="j49-Jn-QLk" secondAttribute="leading" id="JuW-Gb-Jjz"/>
+                            <constraint firstItem="qNZ-JZ-YkN" firstAttribute="top" secondItem="Hdo-bH-eWG" secondAttribute="bottom" constant="-20" id="T97-cN-dQE"/>
+                            <constraint firstAttribute="trailing" secondItem="qNZ-JZ-YkN" secondAttribute="trailing" id="Ttr-uZ-R9A"/>
+                            <constraint firstAttribute="trailing" secondItem="PnU-HQ-9Gh" secondAttribute="trailing" id="eiT-8A-bDQ"/>
+                            <constraint firstItem="X2E-MJ-uff" firstAttribute="top" secondItem="qNZ-JZ-YkN" secondAttribute="bottom" id="lCR-MZ-Jr4"/>
+                            <constraint firstItem="qNZ-JZ-YkN" firstAttribute="leading" secondItem="j49-Jn-QLk" secondAttribute="leading" id="obM-tQ-pSb"/>
+                            <constraint firstAttribute="trailing" secondItem="X2E-MJ-uff" secondAttribute="trailing" id="r5g-PL-obX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="Eal-eF-cAE" id="egt-9D-ACH"/>
+                        <outlet property="buttonForCity" destination="kID-uo-1Ns" id="2yH-8c-W2Y"/>
+                        <outlet property="labelView" destination="X2E-MJ-uff" id="Vs3-P4-cXp"/>
+                        <outlet property="scrollview" destination="PnU-HQ-9Gh" id="4E6-La-cvC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ah-yp-RvU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-463.19999999999999" y="-17.541229385307346"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_find_ico_contacts" width="24" height="24"/>
+        <image name="IMG_find_ico_location" width="24" height="24"/>
+        <image name="IMG_search_icon_search" width="12" height="12"/>
+        <image name="IMG_topbar_back" width="24" height="24"/>
+    </resources>
+</document>

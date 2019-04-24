@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nXa-V7-MsK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CameraVC-->
+        <scene sceneID="vG5-xh-st0">
+            <objects>
+                <viewController id="nXa-V7-MsK" customClass="CameraVC" customModule="ImagePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mvl-1j-Rni"/>
+                        <viewControllerLayoutGuide type="bottom" id="4su-7r-s5Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D8e-Up-LMP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEb-6k-J2r">
+                                <rect key="frame" x="311" y="40" width="44" height="44"/>
+                                <state key="normal" image="img_camera_swap"/>
+                                <connections>
+                                    <action selector="swapButtonTaped:" destination="nXa-V7-MsK" eventType="touchUpInside" id="2BQ-8U-fMu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPK-v4-TWt">
+                                <rect key="frame" x="311" y="114" width="44" height="44"/>
+                                <state key="normal" image="img_camera_flashOff"/>
+                                <connections>
+                                    <action selector="flashButtonTaped:" destination="nXa-V7-MsK" eventType="touchUpInside" id="0sy-1Z-z0y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jst-2H-mLe">
+                                <rect key="frame" x="147.5" y="557" width="80" height="80"/>
+                                <state key="normal" image="img_camera_button"/>
+                                <connections>
+                                    <action selector="takePhoto" destination="nXa-V7-MsK" eventType="touchUpInside" id="sha-t3-1OB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnU-ex-uPd">
+                                <rect key="frame" x="311" y="575" width="44" height="44"/>
+                                <state key="normal" image="img_camera_close"/>
+                                <connections>
+                                    <action selector="closeButtonTaped:" destination="nXa-V7-MsK" eventType="touchUpInside" id="oMv-8z-T3c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iEb-6k-J2r" firstAttribute="top" secondItem="Mvl-1j-Rni" secondAttribute="bottom" constant="20" id="DVs-Ts-62J"/>
+                            <constraint firstItem="Jst-2H-mLe" firstAttribute="centerX" secondItem="D8e-Up-LMP" secondAttribute="centerX" id="Gt3-T8-zVj"/>
+                            <constraint firstAttribute="trailing" secondItem="iEb-6k-J2r" secondAttribute="trailing" constant="20" id="Lp5-RK-QHK"/>
+                            <constraint firstItem="VPK-v4-TWt" firstAttribute="top" secondItem="iEb-6k-J2r" secondAttribute="bottom" constant="30" id="cqU-Hi-ARf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VPK-v4-TWt" secondAttribute="trailing" constant="4" id="jVF-Lx-bGT"/>
+                            <constraint firstItem="4su-7r-s5Q" firstAttribute="top" secondItem="Jst-2H-mLe" secondAttribute="bottom" constant="30" id="qdt-FL-V9j"/>
+                            <constraint firstItem="4su-7r-s5Q" firstAttribute="top" secondItem="UnU-ex-uPd" secondAttribute="bottom" constant="48" id="sSs-VF-KRW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UnU-ex-uPd" secondAttribute="trailing" constant="4" id="zE9-SO-6rG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonForFlash" destination="VPK-v4-TWt" id="m4t-s2-gr9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZj-Sm-rxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-252" y="55"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_camera_button" width="80" height="80"/>
+        <image name="img_camera_close" width="44" height="44"/>
+        <image name="img_camera_flashOff" width="44" height="44"/>
+        <image name="img_camera_swap" width="44" height="44"/>
+    </resources>
+</document>

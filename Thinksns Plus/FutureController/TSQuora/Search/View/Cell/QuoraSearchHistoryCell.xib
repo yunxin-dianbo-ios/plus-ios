@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="QuoraSearchHistoryCell" customModule="ThinkSNS__" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请问猫怎么做好吃？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUO-bN-wet">
+                        <rect key="frame" x="45" y="14" width="225" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59994798898696899" green="0.60003459453582764" blue="0.59992057085037231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygb-0r-x8Q">
+                        <rect key="frame" x="278" y="0.0" width="42" height="44.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="94p-AM-e68"/>
+                            <constraint firstAttribute="height" constant="44.5" id="m3I-qA-xJH"/>
+                        </constraints>
+                        <state key="normal" image="IMG_ico_search_delete"/>
+                        <connections>
+                            <action selector="closeButtonTaped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Yqp-kk-Xm4"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_ico_search_history" translatesAutoresizingMaskIntoConstraints="NO" id="0uB-T2-MP8">
+                        <rect key="frame" x="15" y="15" width="15" height="15"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hpf-Kc-b0j">
+                        <rect key="frame" x="0.0" y="44" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.92933344841003418" green="0.92946368455886841" blue="0.92929232120513916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Lha-E2-BBu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ygb-0r-x8Q" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="A1W-I3-RQb"/>
+                    <constraint firstAttribute="bottom" secondItem="BUO-bN-wet" secondAttribute="bottom" constant="13" id="SLy-RX-p8n"/>
+                    <constraint firstItem="0uB-T2-MP8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Zuc-qx-Qk0"/>
+                    <constraint firstItem="BUO-bN-wet" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="45" id="baj-5i-YTe"/>
+                    <constraint firstAttribute="bottom" secondItem="Hpf-Kc-b0j" secondAttribute="bottom" id="bdb-kO-7iG"/>
+                    <constraint firstAttribute="trailing" secondItem="Hpf-Kc-b0j" secondAttribute="trailing" id="bsA-Sg-PNY"/>
+                    <constraint firstItem="0uB-T2-MP8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="jRS-rc-OOQ"/>
+                    <constraint firstItem="BUO-bN-wet" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="tEQ-Dj-iZn"/>
+                    <constraint firstItem="Hpf-Kc-b0j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tp3-ez-Ke8"/>
+                    <constraint firstItem="ygb-0r-x8Q" firstAttribute="leading" secondItem="BUO-bN-wet" secondAttribute="trailing" constant="8" id="v8d-Od-Wtv"/>
+                    <constraint firstAttribute="trailing" secondItem="ygb-0r-x8Q" secondAttribute="trailing" id="vh5-yP-c6M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelForHistory" destination="BUO-bN-wet" id="lKX-2r-TVI"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="87.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="IMG_ico_search_delete" width="10" height="10"/>
+        <image name="IMG_ico_search_history" width="15" height="15"/>
+    </resources>
+</document>

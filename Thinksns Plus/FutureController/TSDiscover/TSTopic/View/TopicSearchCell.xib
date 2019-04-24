@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="342" id="KGk-i7-Jjw" customClass="TopicSearchCell" customModule="ThinkSNSPlus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xch-yI-fjd">
+                        <rect key="frame" x="0.0" y="48.5" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="5fI-wV-bTm"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SXh-V8-cQJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="48.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今晚打老虎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3C-JS-ib4">
+                                <rect key="frame" x="15" y="0.0" width="305" height="48.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="n3C-JS-ib4" firstAttribute="top" secondItem="SXh-V8-cQJ" secondAttribute="top" id="IxS-sl-Aud"/>
+                            <constraint firstItem="n3C-JS-ib4" firstAttribute="leading" secondItem="SXh-V8-cQJ" secondAttribute="leading" constant="15" id="N16-bb-zXe"/>
+                            <constraint firstAttribute="bottom" secondItem="n3C-JS-ib4" secondAttribute="bottom" id="bcz-cm-9xU"/>
+                            <constraint firstAttribute="trailing" secondItem="n3C-JS-ib4" secondAttribute="trailing" id="gac-46-9Hn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xch-yI-fjd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EnE-tX-diX"/>
+                    <constraint firstItem="xch-yI-fjd" firstAttribute="top" secondItem="SXh-V8-cQJ" secondAttribute="bottom" id="QkN-h3-J2W"/>
+                    <constraint firstAttribute="trailing" secondItem="SXh-V8-cQJ" secondAttribute="trailing" id="T6g-rY-e8c"/>
+                    <constraint firstItem="SXh-V8-cQJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Wq8-O6-COB"/>
+                    <constraint firstAttribute="trailing" secondItem="xch-yI-fjd" secondAttribute="trailing" id="arA-Wl-IVf"/>
+                    <constraint firstAttribute="bottom" secondItem="xch-yI-fjd" secondAttribute="bottom" id="vfV-Mf-ecC"/>
+                    <constraint firstItem="SXh-V8-cQJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xvp-m7-VIA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lineView" destination="xch-yI-fjd" id="Yk2-Uv-JZ1"/>
+                <outlet property="titleText" destination="n3C-JS-ib4" id="XMi-CO-SHp"/>
+                <outlet property="whiteView" destination="SXh-V8-cQJ" id="ONT-vl-I3s"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="201"/>
+        </tableViewCell>
+    </objects>
+</document>

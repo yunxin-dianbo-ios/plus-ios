@@ -1,0 +1,81 @@
+
+/* Class = "UIButton"; normalTitle = "密码模式"; ObjectID = "6xs-iM-OK8"; */
+"6xs-iM-OK8.normalTitle" = "密码模式";
+
+/* Class = "UINavigationItem"; title = "登录"; ObjectID = "BEh-ej-Hwg"; */
+"BEh-ej-Hwg.title" = "登录";
+
+/* Class = "UILabel"; text = "3.6s"; ObjectID = "CTm-Uj-5QV"; */
+"CTm-Uj-5QV.text" = "3.6s";
+
+/* Class = "UIButton"; normalTitle = "提交"; ObjectID = "FvM-Tg-Uci"; */
+"FvM-Tg-Uci.normalTitle" = "提交";
+
+/* Class = "UIBarButtonItem"; title = "注册"; ObjectID = "G5N-HL-Y7T"; */
+"G5N-HL-Y7T.title" = "注册";
+
+/* Class = "UILabel"; text = "密码"; ObjectID = "Jei-cx-aQf"; */
+"Jei-cx-aQf.text" = "password";
+
+/* Class = "UILabel"; text = "手机"; ObjectID = "M3Q-nc-c1E"; */
+"M3Q-nc-c1E.text" = "手机";
+
+/* Class = "UIButton"; normalTitle = "密码模式"; ObjectID = "M9x-nx-Ciw"; */
+"M9x-nx-Ciw.normalTitle" = "密码模式";
+
+/* Class = "UILabel"; text = "新密码"; ObjectID = "Nuy-LA-koA"; */
+"Nuy-LA-koA.text" = "新密码";
+
+/* Class = "UINavigationItem"; title = "忘记密码"; ObjectID = "P4v-Ba-N0g"; */
+"P4v-Ba-N0g.title" = "忘记密码";
+
+/* Class = "UILabel"; text = "提示信息"; ObjectID = "VZE-Lc-cW7"; */
+"VZE-Lc-cW7.text" = "提示信息";
+
+/* Class = "UIButton"; normalTitle = "发验证码"; ObjectID = "WpL-bU-md3"; */
+"WpL-bU-md3.normalTitle" = "发验证码";
+
+/* Class = "UIButton"; normalTitle = "游客登录"; ObjectID = "Y6S-j6-axE"; */
+"Y6S-j6-axE.normalTitle" = "游客登录";
+
+/* Class = "UIButton"; normalTitle = "注册"; ObjectID = "aw8-rF-yOE"; */
+"aw8-rF-yOE.normalTitle" = "注册";
+
+/* Class = "UIButton"; normalTitle = "忘记密码"; ObjectID = "azu-FA-xkr"; */
+"azu-FA-xkr.normalTitle" = "忘记密码";
+
+/* Class = "UIButton"; normalTitle = "发验证码"; ObjectID = "c1q-LB-r6J"; */
+"c1q-LB-r6J.normalTitle" = "发验证码";
+
+/* Class = "UILabel"; text = "60s"; ObjectID = "dWd-cQ-C1M"; */
+"dWd-cQ-C1M.text" = "60s";
+
+/* Class = "UIButton"; normalTitle = "登录"; ObjectID = "dhf-Ml-3ww"; */
+"dhf-Ml-3ww.normalTitle" = "登录";
+
+/* Class = "UILabel"; text = "手机号"; ObjectID = "e8g-nq-f1E"; */
+"e8g-nq-f1E.text" = "手机号";
+
+/* Class = "UIButton"; normalTitle = "密码模式"; ObjectID = "jtI-We-4G9"; */
+"jtI-We-4G9.normalTitle" = "密码模式";
+
+/* Class = "UILabel"; text = "手机号"; ObjectID = "k4j-6l-LrQ"; */
+"k4j-6l-LrQ.text" = "手机号";
+
+/* Class = "UILabel"; text = "密码"; ObjectID = "nae-ez-O9D"; */
+"nae-ez-O9D.text" = "密码";
+
+/* Class = "UILabel"; text = "昵称"; ObjectID = "tNx-58-qSg"; */
+"tNx-58-qSg.text" = "昵称";
+
+/* Class = "UILabel"; text = "验证码"; ObjectID = "v7m-1L-YMW"; */
+"v7m-1L-YMW.text" = "验证码";
+
+/* Class = "UILabel"; text = "验证码"; ObjectID = "vB1-ob-wHZ"; */
+"vB1-ob-wHZ.text" = "验证码";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xxU-HS-b8W"; */
+"xxU-HS-b8W.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "注册"; ObjectID = "zXS-hE-ED9"; */
+"zXS-hE-ED9.title" = "注册";

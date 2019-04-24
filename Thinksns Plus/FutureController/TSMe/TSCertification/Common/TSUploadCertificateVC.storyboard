@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Upload CertificateVC-->
+        <scene sceneID="LIq-Wb-sKs">
+            <objects>
+                <tableViewController storyboardIdentifier="TSUploadCertificateVC" id="bms-rv-d0L" customClass="TSUploadCertificateVC" customModule="ThinkSNSPlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="187" sectionHeaderHeight="28" sectionFooterHeight="28" id="Uec-ye-qVE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Mrv-jY-UvW">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传身份证正反面照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zby-5P-ofS">
+                                    <rect key="frame" x="15" y="15" width="133" height="15"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.59994798898696899" green="0.60003459453582764" blue="0.59992057085037231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="zby-5P-ofS" secondAttribute="bottom" id="4UB-x4-gq1"/>
+                                <constraint firstItem="zby-5P-ofS" firstAttribute="top" secondItem="Mrv-jY-UvW" secondAttribute="top" constant="15" id="5C5-dy-ong"/>
+                                <constraint firstItem="zby-5P-ofS" firstAttribute="leading" secondItem="Mrv-jY-UvW" secondAttribute="leading" constant="15" id="A4L-Pv-6et"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TSUploadCertificateCell" id="Jm7-aY-3le" customClass="TSUploadCertificateCell" customModule="ThinkSNSPlus" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="58" width="375" height="187"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jm7-aY-3le" id="LxL-lZ-vPf">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SvF-AF-GAH">
+                                            <rect key="frame" x="15" y="15" width="345" height="157"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DxO-Go-mCf">
+                                                    <rect key="frame" x="122" y="55" width="100" height="46"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_ico_identi_camera" translatesAutoresizingMaskIntoConstraints="NO" id="bGA-HE-5ia">
+                                                            <rect key="frame" x="38" y="0.0" width="24" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="24" id="QNL-fm-3Ma"/>
+                                                                <constraint firstAttribute="height" constant="21" id="iNT-vh-3JZ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="继续上传" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhj-qd-rTR">
+                                                            <rect key="frame" x="23" y="30" width="54" height="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" red="0.79993206262588501" green="0.80004513263702393" blue="0.79989629983901978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="yhj-qd-rTR" secondAttribute="bottom" id="1Sh-OH-eCq"/>
+                                                        <constraint firstItem="yhj-qd-rTR" firstAttribute="centerX" secondItem="DxO-Go-mCf" secondAttribute="centerX" id="6iG-Cd-UC7"/>
+                                                        <constraint firstItem="bGA-HE-5ia" firstAttribute="top" secondItem="DxO-Go-mCf" secondAttribute="top" id="Ldq-NT-RKp"/>
+                                                        <constraint firstAttribute="width" constant="100" id="crI-It-MfW"/>
+                                                        <constraint firstItem="bGA-HE-5ia" firstAttribute="centerX" secondItem="DxO-Go-mCf" secondAttribute="centerX" id="hvm-HM-Ty6"/>
+                                                        <constraint firstAttribute="height" constant="46" id="zpG-ue-U2Z"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.95671731233596802" green="0.96078783273696899" blue="0.96066063642501831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="DxO-Go-mCf" firstAttribute="centerY" secondItem="SvF-AF-GAH" secondAttribute="centerY" id="FIY-tK-5Ag"/>
+                                                <constraint firstItem="DxO-Go-mCf" firstAttribute="centerX" secondItem="SvF-AF-GAH" secondAttribute="centerX" id="HGB-ee-N8t"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLt-ek-SB7">
+                                            <rect key="frame" x="15" y="15" width="345" height="157"/>
+                                            <connections>
+                                                <action selector="imageButtonTaped" destination="Jm7-aY-3le" eventType="touchUpInside" id="4lW-UW-NQp"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="SvF-AF-GAH" firstAttribute="top" secondItem="LxL-lZ-vPf" secondAttribute="top" constant="15" id="0gb-b9-CS7"/>
+                                        <constraint firstAttribute="bottom" secondItem="wLt-ek-SB7" secondAttribute="bottom" constant="15" id="G46-EH-8Gd"/>
+                                        <constraint firstItem="wLt-ek-SB7" firstAttribute="leading" secondItem="LxL-lZ-vPf" secondAttribute="leading" constant="15" id="Ipy-qP-GKC"/>
+                                        <constraint firstItem="wLt-ek-SB7" firstAttribute="top" secondItem="LxL-lZ-vPf" secondAttribute="top" constant="15" id="SCi-xb-8Q5"/>
+                                        <constraint firstAttribute="trailing" secondItem="SvF-AF-GAH" secondAttribute="trailing" constant="15" id="UES-OE-0yT"/>
+                                        <constraint firstAttribute="bottom" secondItem="SvF-AF-GAH" secondAttribute="bottom" constant="15" id="gc3-xP-nxc"/>
+                                        <constraint firstItem="SvF-AF-GAH" firstAttribute="leading" secondItem="LxL-lZ-vPf" secondAttribute="leading" constant="15" id="jz3-68-F5e"/>
+                                        <constraint firstAttribute="trailing" secondItem="wLt-ek-SB7" secondAttribute="trailing" constant="15" id="oSw-y5-s3e"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="buttonForImage" destination="wLt-ek-SB7" id="LBM-iU-cpC"/>
+                                    <outlet property="labelForPrompt" destination="yhj-qd-rTR" id="9wY-Dm-iGf"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bms-rv-d0L" id="kzw-pr-oAh"/>
+                            <outlet property="delegate" destination="bms-rv-d0L" id="Q3R-SR-8Ze"/>
+                        </connections>
+                    </tableView>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="labelForPrompt" destination="zby-5P-ofS" id="hn1-n2-jXN"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3W1-UO-4jh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-391" y="-64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_ico_identi_camera" width="24" height="21"/>
+    </resources>
+</document>

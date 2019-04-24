@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="QuoraExpertsListCell" customModule="ThinkSNS__" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGh-Gi-d5g">
+                        <rect key="frame" x="68" y="15" width="31" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.19997966289520264" green="0.20001339912414551" blue="0.19996902346611023" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJX-sS-plW">
+                        <rect key="frame" x="234" y="30" width="63" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="2wa-mT-xhJ"/>
+                            <constraint firstAttribute="width" constant="63" id="wrp-Qg-EPf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="关注" image="IMG_channel_ico_add_blue">
+                            <color key="titleColor" red="0.32905876639999998" green="0.71175259349999997" blue="0.8474053144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" title="已关注" image="IMG_channel_ico_added">
+                            <color key="titleColor" red="0.79993206260000005" green="0.80004513259999999" blue="0.79989629979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="followButtonTaped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="711-FI-FZe"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8T-KI-HNR" customClass="ATagsVeiw" customModule="ThinkSNS__" customModuleProvider="target">
+                        <rect key="frame" x="68" y="66" width="202" height="20.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.5" id="Ng4-ua-ZRK"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrN-ej-HDC">
+                        <rect key="frame" x="0.0" y="98.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.91364842653274536" green="0.91377657651901245" blue="0.91360795497894287" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="07p-tl-NeK"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 回答 · 0  赞" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="na1-tE-4FS">
+                        <rect key="frame" x="68" y="43" width="78" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59994798898696899" green="0.60003459453582764" blue="0.59992057085037231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHP-IF-1eN" customClass="AvatarView" customModule="ThinkSNS__" customModuleProvider="target">
+                        <rect key="frame" x="15" y="15" width="38" height="38"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="Rs5-5t-sJ0"/>
+                            <constraint firstAttribute="width" constant="38" id="g27-iE-kdv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="nrN-ej-HDC" secondAttribute="bottom" id="1OV-LC-6ta"/>
+                    <constraint firstAttribute="trailing" secondItem="d8T-KI-HNR" secondAttribute="trailing" constant="50" id="3lg-9S-uIk"/>
+                    <constraint firstItem="bHP-IF-1eN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="4OT-ur-gPF"/>
+                    <constraint firstItem="d8T-KI-HNR" firstAttribute="top" secondItem="na1-tE-4FS" secondAttribute="bottom" constant="7" id="5Yg-sv-1Sr"/>
+                    <constraint firstItem="nrN-ej-HDC" firstAttribute="top" secondItem="d8T-KI-HNR" secondAttribute="bottom" constant="12" id="AIV-px-Kja"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="MJX-sS-plW" secondAttribute="trailing" constant="15" id="Ab4-2W-ZJt"/>
+                    <constraint firstItem="d8T-KI-HNR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="68" id="Ay1-If-AzZ"/>
+                    <constraint firstItem="bGh-Gi-d5g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="B25-YI-Vl1"/>
+                    <constraint firstItem="MJX-sS-plW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="L5w-1p-SSO"/>
+                    <constraint firstItem="na1-tE-4FS" firstAttribute="top" secondItem="bGh-Gi-d5g" secondAttribute="bottom" constant="10" id="QHQ-C1-5xX"/>
+                    <constraint firstAttribute="trailing" secondItem="nrN-ej-HDC" secondAttribute="trailing" id="Rt9-Mt-pHF"/>
+                    <constraint firstItem="nrN-ej-HDC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gw7-ep-OR6"/>
+                    <constraint firstItem="bHP-IF-1eN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="jpu-RP-fBk"/>
+                    <constraint firstItem="bGh-Gi-d5g" firstAttribute="leading" secondItem="bHP-IF-1eN" secondAttribute="trailing" constant="15" id="tcv-BU-ecq"/>
+                    <constraint firstItem="na1-tE-4FS" firstAttribute="leading" secondItem="bHP-IF-1eN" secondAttribute="trailing" constant="15" id="tzR-JZ-JrW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="buttonForAvatar" destination="bHP-IF-1eN" id="8XD-5Y-cnH"/>
+                <outlet property="buttonForFollow" destination="MJX-sS-plW" id="afR-ro-Tgq"/>
+                <outlet property="labelForInfo" destination="na1-tE-4FS" id="Gad-BV-zX3"/>
+                <outlet property="labelForName" destination="bGh-Gi-d5g" id="6vA-I7-KAE"/>
+                <outlet property="tagViewHeight" destination="Ng4-ua-ZRK" id="9H9-JN-aDX"/>
+                <outlet property="tagsView" destination="d8T-KI-HNR" id="MJq-Lv-882"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="56"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="IMG_channel_ico_add_blue" width="12" height="12"/>
+        <image name="IMG_channel_ico_added" width="12" height="12"/>
+    </resources>
+</document>

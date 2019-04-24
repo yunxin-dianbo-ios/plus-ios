@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Q1O-sd-hnp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Friend SearchVC-->
+        <scene sceneID="eXs-gC-2Xu">
+            <objects>
+                <viewController id="Q1O-sd-hnp" customClass="TSFriendSearchVC" customModule="ThinkSNSPlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jrq-U0-czr"/>
+                        <viewControllerLayoutGuide type="bottom" id="iEi-a0-biW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SAa-AX-FCX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnR-Lc-wUm" customClass="TSSearchBarView" customModule="ThinkSNSPlus" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D79-Je-Yar">
+                                        <rect key="frame" x="0.0" y="63" width="375" height="1"/>
+                                        <color key="backgroundColor" red="0.8705146312713623" green="0.87063705921173096" blue="0.8704758882522583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="GeY-1c-vTA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="D79-Je-Yar" secondAttribute="trailing" id="52e-mU-tQW"/>
+                                    <constraint firstItem="D79-Je-Yar" firstAttribute="leading" secondItem="cnR-Lc-wUm" secondAttribute="leading" id="eJG-gi-Nfe"/>
+                                    <constraint firstAttribute="height" constant="64" id="hbr-O7-KUi"/>
+                                    <constraint firstAttribute="bottom" secondItem="D79-Je-Yar" secondAttribute="bottom" id="ubb-SG-nkV"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="68" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fas-LN-1q6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TSFriendListCell" id="ygm-JS-mg6" customClass="TSFriendListCell" customModule="ThinkSNSPlus" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="68"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ygm-JS-mg6" id="Sbu-le-M6e">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Q1O-sd-hnp" id="POd-D3-EOd"/>
+                                    <outlet property="delegate" destination="Q1O-sd-hnp" id="AYE-ih-BQx"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cnR-Lc-wUm" firstAttribute="leading" secondItem="SAa-AX-FCX" secondAttribute="leading" id="U8P-pb-lPk"/>
+                            <constraint firstItem="fas-LN-1q6" firstAttribute="top" secondItem="cnR-Lc-wUm" secondAttribute="bottom" id="UDf-Vq-ncV"/>
+                            <constraint firstAttribute="trailing" secondItem="cnR-Lc-wUm" secondAttribute="trailing" id="cwC-ue-nlZ"/>
+                            <constraint firstItem="cnR-Lc-wUm" firstAttribute="top" secondItem="SAa-AX-FCX" secondAttribute="top" id="fB7-tj-6BG"/>
+                            <constraint firstItem="fas-LN-1q6" firstAttribute="leading" secondItem="SAa-AX-FCX" secondAttribute="leading" id="n2N-bs-sl0"/>
+                            <constraint firstItem="iEi-a0-biW" firstAttribute="top" secondItem="fas-LN-1q6" secondAttribute="bottom" id="w6l-hj-Iah"/>
+                            <constraint firstAttribute="trailing" secondItem="fas-LN-1q6" secondAttribute="trailing" id="xQL-af-V4e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchbarView" destination="cnR-Lc-wUm" id="bdp-69-RDf"/>
+                        <outlet property="tableview" destination="fas-LN-1q6" id="R0l-aI-yFN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ei7-av-2ro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="111.99400299850076"/>
+        </scene>
+    </scenes>
+</document>

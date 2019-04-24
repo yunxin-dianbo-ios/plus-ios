@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TSNewsTagSettingCollectionViewCell" customModule="Thinksns_Plus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="119"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="119"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akY-jO-C4s">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="119"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.masksToBounds" value="true"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_information_ico_delete" translatesAutoresizingMaskIntoConstraints="NO" id="P76-gU-dAb">
+                        <rect key="frame" x="-5" y="-5" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="h9d-qe-Hzc"/>
+                            <constraint firstAttribute="height" constant="12" id="lr8-ts-PW9"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="P76-gU-dAb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="-5" id="04V-z6-YiA"/>
+                <constraint firstItem="akY-jO-C4s" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0cc-Qy-sUu"/>
+                <constraint firstAttribute="trailing" secondItem="akY-jO-C4s" secondAttribute="trailing" id="Ozl-2k-koz"/>
+                <constraint firstItem="akY-jO-C4s" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ivF-a1-TzW"/>
+                <constraint firstAttribute="bottom" secondItem="akY-jO-C4s" secondAttribute="bottom" id="jUe-gp-Mwg"/>
+                <constraint firstItem="P76-gU-dAb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="-5" id="yeO-HE-KM9"/>
+            </constraints>
+            <size key="customSize" width="190" height="119"/>
+            <connections>
+                <outlet property="deletImg" destination="P76-gU-dAb" id="OVo-Mg-Bq9"/>
+                <outlet property="titleLabel" destination="akY-jO-C4s" id="j5X-lS-fbD"/>
+            </connections>
+            <point key="canvasLocation" x="-228" y="69"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="IMG_information_ico_delete" width="15" height="15"/>
+    </resources>
+</document>

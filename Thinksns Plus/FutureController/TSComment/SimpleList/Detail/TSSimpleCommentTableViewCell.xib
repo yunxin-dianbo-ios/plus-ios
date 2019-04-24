@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="49" id="KGk-i7-Jjw" customClass="TSSimpleCommentTableViewCell" customModule="ThinkSNS__" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hM-kD-tep" customClass="TSCommentLabel" customModule="ThinkSNS__" customModuleProvider="target">
+                        <rect key="frame" x="22" y="3.5" width="298" height="41.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="10" id="Xlv-gw-vCG"/>
+                        </constraints>
+                    </view>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njN-Jy-Boj">
+                        <rect key="frame" x="0.0" y="13.5" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="YU1-ma-57I"/>
+                            <constraint firstAttribute="height" constant="22" id="v2Z-UM-sjq"/>
+                        </constraints>
+                        <state key="normal" image="IMG_msg_box_remind"/>
+                        <connections>
+                            <action selector="repeatTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lEm-xx-ecT"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7hM-kD-tep" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3.5" id="GxO-al-fS1"/>
+                    <constraint firstItem="njN-Jy-Boj" firstAttribute="centerY" secondItem="7hM-kD-tep" secondAttribute="centerY" id="H4W-jS-ffE"/>
+                    <constraint firstAttribute="bottom" secondItem="7hM-kD-tep" secondAttribute="bottom" priority="750" constant="3.5" id="P0N-2R-wc0"/>
+                    <constraint firstItem="7hM-kD-tep" firstAttribute="leading" secondItem="njN-Jy-Boj" secondAttribute="trailing" id="P1R-Dr-KHh"/>
+                    <constraint firstAttribute="trailing" secondItem="7hM-kD-tep" secondAttribute="trailing" id="Qs2-FY-nWS"/>
+                    <constraint firstItem="njN-Jy-Boj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aI4-aP-cr1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentLabel" destination="7hM-kD-tep" id="T1v-XJ-5gO"/>
+                <outlet property="commentLabelHeight" destination="Xlv-gw-vCG" id="qMz-qR-UJq"/>
+                <outlet property="repeatButton" destination="njN-Jy-Boj" id="opf-2K-3yl"/>
+            </connections>
+            <point key="canvasLocation" x="-70" y="-49.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="IMG_msg_box_remind" width="16" height="16"/>
+    </resources>
+</document>

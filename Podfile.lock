@@ -1,0 +1,245 @@
+PODS:
+  - ActiveLabel (0.7.1)
+  - Alamofire (4.7.3)
+  - AMap3DMap-NO-IDFA (6.4.0):
+    - AMapFoundation-NO-IDFA (~> 1.5)
+  - AMapFoundation-NO-IDFA (1.5.3)
+  - AMapLocation-NO-IDFA (2.6.1):
+    - AMapFoundation-NO-IDFA (~> 1.4)
+  - AMapSearch-NO-IDFA (6.1.1):
+    - AMapFoundation-NO-IDFA (~> 1.4)
+  - Bugly (2.4.8)
+  - CryptoSwift (0.7.0)
+  - GCDWebServer/Core (3.4.2)
+  - GCDWebServer/WebUploader (3.4.2):
+    - GCDWebServer/Core
+  - Hyphenate (3.3.6)
+  - IQKeyboardManagerSwift (4.0.7)
+  - JCore (1.1.9)
+  - JPush (3.0.3):
+    - JCore (~> 1.1.1)
+  - JSQMessagesViewController (7.3.4):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
+  - KeychainAccess (3.0.1)
+  - Kingfisher (4.7.0)
+  - KMPlaceholderTextView (1.3.0)
+  - MarkdownView (1.1.0)
+  - Masonry (1.1.0)
+  - MJRefresh (3.1.12)
+  - mob_linksdk (2.2.5):
+    - MOBFoundation
+  - MOBFoundation (3.1.9)
+  - Mockingjay (2.0.0):
+    - Mockingjay/Core (= 2.0.0)
+    - Mockingjay/XCTest (= 2.0.0)
+  - Mockingjay/Core (2.0.0):
+    - URITemplate (~> 2.0)
+  - Mockingjay/XCTest (2.0.0):
+    - Mockingjay/Core
+  - MonkeyKing (1.3.0)
+  - Nimble (5.1.1)
+  - objc-geohash (0.0.1)
+  - ObjectMapper (3.3.0)
+  - PKHUD (4.2.3)
+  - ReachabilitySwift (3)
+  - Realm (3.0.1):
+    - Realm/Headers (= 3.0.1)
+  - Realm/Headers (3.0.1)
+  - RealmSwift (3.0.1):
+    - Realm (= 3.0.1)
+  - SCRecorder (2.7.0)
+  - SnapKit (3.1.2)
+  - Starscream (2.0.2)
+  - STRegex (1.1.0)
+  - SwiftDate (4.0.11)
+  - SwiftyJSON (3.1.3)
+  - TYAttributedLabel (2.6.6)
+  - TZImagePickerController (2.0.1)
+  - URITemplate (2.0.3)
+  - Vivid (0.9)
+  - WechatOpenSDK (1.8.2)
+  - XCGLogger (4.0.0):
+    - XCGLogger/Core (= 4.0.0)
+  - XCGLogger/Core (4.0.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+  - ZFPlayer (2.1.6):
+    - Masonry
+
+DEPENDENCIES:
+  - ActiveLabel (from `https://github.com/customized-repos/ActiveLabel.swift.git`)
+  - Alamofire (= 4.7.3)
+  - AMap3DMap-NO-IDFA (= 6.4.0)
+  - AMapLocation-NO-IDFA (= 2.6.1)
+  - AMapSearch-NO-IDFA (= 6.1.1)
+  - Bugly (= 2.4.8)
+  - CryptoSwift (= 0.7.0)
+  - GCDWebServer/WebUploader (= 3.4.2)
+  - Hyphenate (= 3.3.6)
+  - IQKeyboardManagerSwift (= 4.0.7)
+  - JPush (= 3.0.3)
+  - JSQMessagesViewController (from `https://github.com/customized-repos/JSQMessagesViewController.git`, branch `7.3.4`)
+  - KeychainAccess (= 3.0.1)
+  - Kingfisher (= 4.7.0)
+  - KMPlaceholderTextView (= 1.3.0)
+  - MarkdownView (from `https://github.com/customized-repos/MarkdownView.git`)
+  - Masonry (= 1.1.0)
+  - MJRefresh (= 3.1.12)
+  - mob_linksdk (= 2.2.5)
+  - Mockingjay (= 2.0.0)
+  - MonkeyKing (= 1.3.0)
+  - Nimble (= 5.1.1)
+  - objc-geohash (= 0.0.1)
+  - ObjectMapper (= 3.3.0)
+  - PKHUD (= 4.2.3)
+  - ReachabilitySwift (= 3)
+  - RealmSwift (= 3.0.1)
+  - SCRecorder (from `https://github.com/customized-repos/SCRecorder`)
+  - SnapKit (= 3.1.2)
+  - Starscream (= 2.0.2)
+  - STRegex (= 1.1.0)
+  - SwiftDate (= 4.0.11)
+  - SwiftyJSON (= 3.1.3)
+  - TYAttributedLabel (from `https://github.com/customized-repos/TYAttributedLabel.git`)
+  - TZImagePickerController (from `https://github.com/customized-repos/TZImagePickerController.git`)
+  - Vivid
+  - WechatOpenSDK (= 1.8.2)
+  - XCGLogger (= 4.0.0)
+  - YYKit (= 1.0.9)
+  - ZFPlayer (from `https://github.com/customized-repos/ZFPlayer.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AMap3DMap-NO-IDFA
+    - AMapFoundation-NO-IDFA
+    - AMapLocation-NO-IDFA
+    - AMapSearch-NO-IDFA
+    - Bugly
+    - CryptoSwift
+    - GCDWebServer
+    - Hyphenate
+    - IQKeyboardManagerSwift
+    - JCore
+    - JPush
+    - JSQSystemSoundPlayer
+    - KeychainAccess
+    - Kingfisher
+    - KMPlaceholderTextView
+    - Masonry
+    - MJRefresh
+    - mob_linksdk
+    - MOBFoundation
+    - Mockingjay
+    - MonkeyKing
+    - Nimble
+    - objc-geohash
+    - ObjectMapper
+    - PKHUD
+    - ReachabilitySwift
+    - Realm
+    - RealmSwift
+    - SnapKit
+    - Starscream
+    - STRegex
+    - SwiftDate
+    - SwiftyJSON
+    - URITemplate
+    - Vivid
+    - WechatOpenSDK
+    - XCGLogger
+    - YYKit
+
+EXTERNAL SOURCES:
+  ActiveLabel:
+    :git: https://github.com/customized-repos/ActiveLabel.swift.git
+  JSQMessagesViewController:
+    :branch: 7.3.4
+    :git: https://github.com/customized-repos/JSQMessagesViewController.git
+  MarkdownView:
+    :git: https://github.com/customized-repos/MarkdownView.git
+  SCRecorder:
+    :git: https://github.com/customized-repos/SCRecorder
+  TYAttributedLabel:
+    :git: https://github.com/customized-repos/TYAttributedLabel.git
+  TZImagePickerController:
+    :git: https://github.com/customized-repos/TZImagePickerController.git
+  ZFPlayer:
+    :git: https://github.com/customized-repos/ZFPlayer.git
+
+CHECKOUT OPTIONS:
+  ActiveLabel:
+    :commit: "385370fe270fa911b5a275323da1260e1b34b8cc\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'"
+    :git: https://github.com/customized-repos/ActiveLabel.swift.git
+  JSQMessagesViewController:
+    :commit: 0a6f77f9d6ab8caddb2f7af2e4c122f314489ca2
+    :git: https://github.com/customized-repos/JSQMessagesViewController.git
+  MarkdownView:
+    :commit: "f45c8139a5a76eddbd0b69c08e232922fa0318ee\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'"
+    :git: https://github.com/customized-repos/MarkdownView.git
+  SCRecorder:
+    :commit: "f5f692f07ca4a898c3ae00530ae75db7806722ea\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'"
+    :git: https://github.com/customized-repos/SCRecorder
+  TYAttributedLabel:
+    :commit: "d3626586e7077eabbbaa253d90bd02902774c6a4\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'"
+    :git: https://github.com/customized-repos/TYAttributedLabel.git
+  TZImagePickerController:
+    :commit: "7ac2ef13271300cffaa5132a38299d9375e267b4\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'"
+    :git: https://github.com/customized-repos/TZImagePickerController.git
+  ZFPlayer:
+    :commit: "e3476f7fde91276bed8ff460b08955f306a785c9\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX10.12.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'\ngit: error: unable to read SDK settings for '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk'"
+    :git: https://github.com/customized-repos/ZFPlayer.git
+
+SPEC CHECKSUMS:
+  ActiveLabel: faa96b5f50507770536a3e48a4cf291ee88fb7db
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AMap3DMap-NO-IDFA: 8c3b4420b6f0520e44cab25e97ca9457e00dbba0
+  AMapFoundation-NO-IDFA: 128ccf9249abc9de1661b935f01d116700583691
+  AMapLocation-NO-IDFA: ffd69b8b88f553d0b252d4967bf301ad2afff9c0
+  AMapSearch-NO-IDFA: 848e148a31876217a1094e6be3448e95d1688b6a
+  Bugly: da3c02408c14838d498429320545a8e439392978
+  CryptoSwift: e197577cc40d551110480a64c73f31dbff1d8e74
+  GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
+  Hyphenate: 4f2af7a1258f3374a925fa7f51bae80a74f12d6d
+  IQKeyboardManagerSwift: 58bbcf46b5cf9fd4ed625d28a60cb2fbae4ab0f4
+  JCore: 27598485098d0db99d2812cba048003457d08cfb
+  JPush: 8ea7c5bee363191cb5214f5d34ae11e1c5494722
+  JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
+  KeychainAccess: 017ea25e313a49eda10bb19b0bb0760fb1edfe1a
+  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
+  KMPlaceholderTextView: 2bbcd19a273648a80a61e1e48f9743a24d8930e3
+  MarkdownView: 7ba5772f1038e39b957acd55694dc209b10c24d9
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  mob_linksdk: 2b7ce277378874fb386c64acdb6f78ffe4ace14d
+  MOBFoundation: 11500153c10d83e4ac341f6ad6301b3998ce6db2
+  Mockingjay: 7122a3fc0597aa63438e4cd9b71b7bc8aac05b87
+  MonkeyKing: 8e28bc2b2a93f67f8c3fcc08f41809b0e7ef848b
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  objc-geohash: 5a92a1deb6c4729ecefdf847159991a1068fb4cc
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  PKHUD: c7692163a09875cbf15827dc581df3c5cf7f1015
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  Realm: ba6144c74f835f7497791f6599d63a7755377b83
+  RealmSwift: 7d13b1ac4b6022a13f841e3143e7789c9e40ad0d
+  SCRecorder: bbb521dbc222908876ec9cd9156bbc8a893bed44
+  SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
+  Starscream: 6c135a34e0a6e60cedaa0b30db67a4c05cf7cd38
+  STRegex: eb1f4c2fe9e2f0265b8df8634774cd8cd8914018
+  SwiftDate: a36d5ce7c86bed3ed92b583ccbf15045f374ac65
+  SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
+  TYAttributedLabel: cb8fc910d97eb5224936d4f692a78e042af691b2
+  TZImagePickerController: 34ecb53af8c349964394407e42b6e54e22589ebe
+  URITemplate: ace0c4c46dcf8afe6e89b4060621852886b15c3b
+  Vivid: 0fde7409beac71224deb151dd78f98a5bb860497
+  WechatOpenSDK: 676feec516a11173eafd1fe64b10d27babf28701
+  XCGLogger: 38063ea89b4c8b23232d18efd2e12eb0005f3ea4
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  ZFPlayer: 833cb3974b619bfd01a0ec1ebaabfe6f629e85b4
+
+PODFILE CHECKSUM: e3f92f52ca126845100fd48553fbf39f7dc63a4e
+
+COCOAPODS: 1.5.3

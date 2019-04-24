@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" id="iN0-l3-epB" customClass="TSAdvetLaunchItem" customModule="ThinkSNSPlus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uR-KT-s7s">
+                    <rect key="frame" x="255" y="40" width="53" height="21"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.2011986301369863" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="53" id="Ast-wN-M4p"/>
+                        <constraint firstAttribute="height" constant="21" id="b4a-t6-BKo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="跳过广告"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="10.199999999999999"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="skipButtonTaped:" destination="iN0-l3-epB" eventType="touchUpInside" id="Suf-fh-Eqb"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_pic_adver_logo" translatesAutoresizingMaskIntoConstraints="NO" id="o9T-5O-4My">
+                    <rect key="frame" x="0.0" y="472" width="320" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="o9T-5O-4My" secondAttribute="height" multiplier="20:6" id="Nxg-ti-lI3"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="o9T-5O-4My" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="472" id="G4t-c6-NG2"/>
+                <constraint firstAttribute="top" secondItem="8uR-KT-s7s" secondAttribute="bottom" constant="-61" id="Q9B-Di-ENo"/>
+                <constraint firstAttribute="trailing" secondItem="8uR-KT-s7s" secondAttribute="trailing" constant="12" id="QmU-6M-nm3"/>
+                <constraint firstItem="o9T-5O-4My" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TZg-vM-b4z"/>
+                <constraint firstItem="8uR-KT-s7s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="f0d-ev-d7q"/>
+                <constraint firstAttribute="top" secondItem="8uR-KT-s7s" secondAttribute="bottom" constant="-61" id="r4x-pE-c9f"/>
+                <constraint firstAttribute="trailing" secondItem="o9T-5O-4My" secondAttribute="trailing" id="usD-8y-Dm8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <connections>
+                <outlet property="buttonForSkip" destination="8uR-KT-s7s" id="DEh-Hg-LKh"/>
+                <outlet property="logoTopConstraint" destination="G4t-c6-NG2" id="TDc-uT-X5z"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="137.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IMG_pic_adver_logo" width="200" height="60"/>
+    </resources>
+</document>
